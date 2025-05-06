@@ -65,3 +65,17 @@ img {
 
 
 }
+
+#form {
+
+    padding: 40px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+    input {
+        width: 400px
+    }
+}
