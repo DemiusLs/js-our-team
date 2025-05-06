@@ -36,3 +36,56 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+const createCard = (member) => {
+  const {
+    name, role, email, img
+  } = member
+
+  return `<div class="card">
+                <div>
+                    <img src="./${img}" width="150px" alt="">
+                </div>
+
+                <div class="card-description">
+                    <h2>${name}</h2>
+                    <span>${role}</span>
+                    <a href=""> ${email}</a>
+
+                </div>
+
+            </div>`
+
+
+}
+const cardContainer = document.getElementById("card-container");
+// for (let member of teamMembers) {
+
+//   console.log((member));
+
+//   cardContainer.innerHTML = 
+
+
+
+// }
+
+const printCard = (arrayList, element) => {
+
+  let cardList = "";
+  for (let member of arrayList) {
+
+    cardList += createCard(member)
+
+  }
+
+  element.innerHTML = cardList
+
+}
+
+printCard(teamMembers, cardContainer)
+
+
+
+
+

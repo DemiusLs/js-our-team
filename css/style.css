@@ -18,13 +18,23 @@ img {
 
 .title {
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
+    font-size: 3rem;
 }
 
 .start-description {
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
+    font-size: 1.5rem;
 }
+
+#card-container {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 .card {
     width: 30%;
@@ -33,6 +43,7 @@ img {
 
 
 }
+
 
 .card-description {
     display: flex;
