@@ -87,5 +87,25 @@ printCard(teamMembers, cardContainer)
 
 
 
+const formElem = document.getElementById("form");
 
+formElem.addEventListener("submit", uploadCard)
+
+function uploadCard(e) {
+
+  e.preventDefault();
+
+  const name = document.getElementById("nome").value;
+  const role = document.getElementById("ruolo").value;
+  const email = document.getElementById("email").value;
+  const img = document.getElementById("img").value;
+
+  const newMember = {
+    name, role, email, img
+  }
+  teamMembers.push(newMember)
+
+  printCard(teamMembers, cardContainer)
+
+}
 
